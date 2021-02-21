@@ -156,14 +156,14 @@ const Exoplanets = (props) => {
                 <p>
                     I remember at a MIT HSSP class about astrobiology, one of
                     the teachers said, "If you take a cup of water from the
-                    ocean, you wouldn't find a fish right away. And it's just
-                    like space." However, I thought, "Well, if you took a
+                    ocean, you wouldn't find a fish right away. It's just
+                    like space, you won't find anything the first time." However, I thought, "Well, if you took a
                     microscope, you would certainly find microbial life." {"\n"}{" "}
-                    But in that arguement, I found the counter: we don't have
-                    that microscope for space yet. We can't walk a mile to the
-                    ocean and we can't zoom in to find life. And as technology
+                    But the final point was in that arguement: we don't have
+                    that microscope for space yet. We can't travel to distant galaxies just how we can walk a mile to the
+                    ocean and we can't zoom in to a planet to find life like we can with a microscope. But as technology
                     evolves and our understanding of life, astronomy, and
-                    biology improves, we will soon find that we are not alone.
+                    biology improves, we will most definitely soon find that we are not alone.
                 </p>
 
                 <h3>Mars Perseverance Rover</h3>
