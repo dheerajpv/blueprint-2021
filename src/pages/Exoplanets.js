@@ -180,6 +180,11 @@ const Exoplanets = (props) => {
                                 exoplanets.nasa.gov/what-is-an-exoplanet/overview/
                             </a>
                         </li>
+                        <li>
+                            <a href="https://exoplanets.nasa.gov/search-for-life/habitable-zone/ ">
+                                exoplanets.nasa.gov/search-for-life/habitable-zone/ 
+                            </a>
+                        </li>
                     </ul>
                 </p>
             </div>

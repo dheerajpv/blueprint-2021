@@ -21,10 +21,11 @@ const About = (props) => {
                         <p>
                             {" "}
                             Hello! I'm a sophomore interested in cryptography,
-                            computer science, and astronomy. Yes - life exists
-                            outside Earth. Yes - we will land on Mars by 2030.
-                            Yes - I want to go to space. No - I do not believe
-                            in UFO sighting though.
+                            computer science, biology, and astrobiology. Yes -
+                            life exists outside Earth. Yes - we will land on Mars
+                            by 2030. Yes - I want to go to space (I will leave
+                            everything behind to go right now...). No - I do not
+                            believe in UFO sighting though.
                         </p>
                         <details>
                             <summary>
@@ -52,37 +53,21 @@ const About = (props) => {
                         <h3 classname="headers">
                             <b>Ismayil Ismayilov</b>{" "}
                         </h3>
-                        <p>
-                            {" "}
-                            Hi. I worked on the visuals for this. I don't know
-                            what to tell you. I think cryptography and 3D design
-                            is pretty cool. I hope you enjoy the website, I
-                            think exoplanets are pretty interesting. Can I go
-                            home now? Oh wait.
-                        </p>
-                        <details>
-                            <summary>
-                                <b>Favorite Lofi Playlist/Track/Artist? </b>{" "}
-                            </summary>
-                            <ul>
-                                <li>Artist: Ibrahim </li>
-                                <li>
-                                    Playlist: I usually just pick a random one
-                                </li>
-                                <li>
-                                    Track:
-                                    <a
-                                        href="https://www.youtube.com/watch?v=IatXU05oUE0%22%3E"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        {" "}
-                                        Ibrahim - Land of Petals{" "}
-                                    </a>
-                                </li>
-                            </ul>
-                        </details>
-                    </div>
+
+                    <p> 
+                        Hi. I worked on the visuals for this. I don't know what to tell you. I think cryptography and 3D design is pretty cool.
+                        I hope you enjoy the website, I think exoplanets are pretty interesting. You know, I think I should have maybe
+                        considered how painful rendering is before I started this. Can I go home now? Oh wait. 
+                    </p>
+                        <details> 
+                            <summary><b>Favorite Lofi Playlist/Track/Artist? </b> </summary>
+                        <ul>
+                            <li>Artist: Ibrahim </li>
+                            <li>Playlist: I usually just pick a random one</li>
+                            <li><a href="https://www.youtube.com/watch?v=IatXU05oUE0"> Ibrahim - Land of Petals </a></li>
+                        </ul>
+                    </details>
+                </div>
 
                     <div className="col-sm">
                         <h3 classname="headers">
@@ -90,7 +75,7 @@ const About = (props) => {
                         </h3>
                         <p>
                             {" "}
-                            I am a sophore in Quincy High School, and. I made
+                            I am a sophore in Quincy High School, and I made
                             the graph generating function. I am interested in
                             computer science, and have experience in node.js,
                             especially discord.js. I am a huge fan of all things
