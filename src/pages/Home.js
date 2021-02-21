@@ -24,9 +24,12 @@ const Home = (props) => {
     return (
         <div className="home">
             <Navbar page={props.location.pathname} />
-            <header>
-                <h1 className="home-header">EXOPLANET GRAPHS</h1> {"\n"}
-            </header>
+            <center> 
+                <header>
+                    <h1 className="home-header">EXOPLANET GRAPHS</h1>
+                </header>
+            </center>
+
             <button
                     className="btn btn-primary"
                     onClick={() => {
