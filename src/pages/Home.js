@@ -23,9 +23,17 @@ const Home = () => {
                         <img src={image} alt="a graph" width="50%" />
                     </center>
                 ) : (
-                    <div class="spinner-border" role="status">
-                        <span style={{ display: "none" }}>Loading...</span>
-                    </div>
+                    <>
+                        <div
+                            class="spinner-border"
+                            role="status"
+                            style={{ color: "red" }}
+                        />
+                        <br />
+                        <span style={{ color: "white", paddingTop: "1rem" }}>
+                            Loading...
+                        </span>
+                    </>
                 )}
             </div>
         </div>
