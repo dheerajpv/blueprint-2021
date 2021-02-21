@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Home.css";
 
 const Home = () => {
     const [image, setImage] = useState("");
@@ -12,17 +13,21 @@ const Home = () => {
     });
 
     return (
-        <div>
-            <p>
-                <center>Exoplanet Graphs</center>
-            </p>
-            {image ? (
-                <img src={image} alt="a graph" />
-            ) : (
-                <div class="spinner-border" role="status">
-                    <span style={{ display: "none" }}>Loading...</span>
-                </div>
-            )}
+        <div className="home">
+            <header>
+                <h1>Exoplanet Graphs</h1>
+            </header>
+            <div className="image-container">
+                {image ? (
+                    <center>
+                        <img src={image} alt="a graph" width="50%" />
+                    </center>
+                ) : (
+                    <div class="spinner-border" role="status">
+                        <span style={{ display: "none" }}>Loading...</span>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

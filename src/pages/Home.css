@@ -1,0 +1,24 @@
+html,
+body {
+    background-color: #1f1f1f;
+}
+
+.home {
+    text-align: center;
+}
+
+header {
+    /* todo: make a better color (or an image!) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #131169;
+    color: white;
+}
+
+.image-container img {
+    margin: 2rem;
+    border-radius: 2rem;
+}
