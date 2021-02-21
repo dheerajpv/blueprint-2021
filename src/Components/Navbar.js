@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
+//Navigation Bar for the three pages
 const Navbar = ({ page }) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
