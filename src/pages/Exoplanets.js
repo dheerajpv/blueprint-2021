@@ -166,6 +166,30 @@ const Exoplanets = (props) => {
                     biology improves, we will soon find that we are not alone.
                 </p>
 
+                <h3>Mars Perseverance Rover</h3>
+                    <p>
+                        Launching on July 30, 2020, the Mars Perseverance Rover launched on the top of ULA on a mission to Mars. With a goal of 
+                        collecting samples of rocks, conducting scientific tests, and paving the way for human flight to Mars, Perseverance, or Percy for short, 
+                        also had an astrobiology mission. With those samples and its specific landing site, NASA hopes to one day collect those samples which could 
+                        have evidence of previous life. 
+
+                        <details className="facts">
+                            <summary>
+                                <b>Fun Fact! </b>{" "}
+                            </summary>
+                            <p>{"\n"}The Mars Perseverance Rover is also carrying MOXIE, a technology designed by MIT, to produce oxygen from martian atmospheric 
+                            carbon dioxide. This technology could be used in the future to burn rocket fuel to return to Earth.</p>
+                        </details>
+
+                        After the 7 minutes of terror on February 18, 2021, the Mars Perseverance Rover landed on Mars using some of the most advanced technology 
+                        that was ever launched in space. Scientists hope in a few months, Percy can collect some samples and in 2031 (hopefully), those samples can 
+                        return to Earth and extensive research can occur.
+                    </p>
+
+
+
+
+
                 <p>
                     {" "}
                     Sources:
@@ -183,6 +207,11 @@ const Exoplanets = (props) => {
                         <li>
                             <a href="https://exoplanets.nasa.gov/search-for-life/habitable-zone/ ">
                                 exoplanets.nasa.gov/search-for-life/habitable-zone/ 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mars.nasa.gov/mars2020/mission/facts/">
+                                mars.nasa.gov/mars2020/mission/facts/ 
                             </a>
                         </li>
                     </ul>
