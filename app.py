@@ -18,6 +18,8 @@ def make_graph():
     # makes col1 and col2 have a list of values from the csv
     with open("src/PS_2021.02.18_14.17.39.csv", newline="") as csvfile:
         reader = csv.reader(csvfile)
+
+        # skip the first row because it has text that can't become a number
         next(reader)
 
         # there are 256 different columns in the (purged) csv, so it picks a random column
