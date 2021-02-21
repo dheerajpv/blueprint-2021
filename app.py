@@ -4,10 +4,19 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from random import randint
+import numpy as np
 import io
 import base64
 import csv
 
+# truncates the longer list to be the same length as the shorter one
+def truncate_lists(list1: list, list2: list):
+    if len(list1) > len(list2):
+        for i in range(len(list1) - len(list2)):
+            list1.pop()
+    elif len(list2) > len(list1):
+        for i in range(len(list2) - len(list1)):
+            list2.pop()
 
 app = Flask(__name__)
 CORS(app)
@@ -52,14 +61,29 @@ def make_graph():
             except:
                 pass
 
-    # truncates the longer list to be the same length as the shorter one
-    if len(col1) > len(col2):
-        for i in range(len(col1) - len(col2)):
-            col1.pop()
-    elif len(col2) > len(col2) - len(col1):
-        for i in range(len(col2) - len(col1)):
-            col2.pop()
+    truncate_lists(col1, col2)
 
+    # getting the quartiles
+    col1Arr = np.array(col1)
+    col1FirstQ =  np.percentile(col1Arr, 25)
+    col1ThirdQ = np.percentile(col1Arr, 75)
+    
+    col2Arr = np.array(col2)
+    col2FirstQ = np.percentile(col2Arr, 25)
+    col2ThirdQ = np.percentile(col2Arr, 75)
+
+    # removing outliers using quartiles
+    for i in col1:
+        if i < col1FirstQ or i > col1ThirdQ:
+            col1.remove(i)
+
+    for i in col2:
+        if i < col2FirstQ or i > col2ThirdQ:
+            col2.remove(i)
+
+    truncate_lists(col1, col2) # need to truncate again because lengths can be different
+
+    # actually plotting the graph
     plt.plot(col1, col2, "bo")
     plt.xlabel(x_title)
     plt.ylabel(y_title)
