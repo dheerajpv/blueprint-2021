@@ -17,23 +17,31 @@ def make_graph():
     s = io.BytesIO()
     col1 = []
     col2 = []
+    x_title = ""
+    y_title = ""
     
     # makes col1 and col2 have a list of values from the csv
     with open("src/PS_2021.02.18_14.17.39.csv", newline="") as csvfile:
         reader = csv.reader(csvfile)
-        next(reader)
+
+        # skip the first row because it has text that can't become a number
+        header = next(reader)
 
         # there are 256 different columns in the (purged) csv, so it picks a random column
-        seed = randint(0, 256)
+        seed_x = randint(0, 256)
+        seed_y = randint(0, 256)
+
+        x_title = header[seed_x]
+        y_title = header[seed_y]
 
         for row in reader:
             try:
-                col1.append(float(row[seed]))
+                col1.append(float(row[seed_x]))
             except:
                 pass
 
             try:
-                col2.append(float(row[seed]))
+                col2.append(float(row[seed_y]))
             except:
                 pass
 
@@ -46,6 +54,8 @@ def make_graph():
             col2.pop()
 
     plt.plot(col1, col2, "bo")
+    plt.xlabel(x_title)
+    plt.ylabel(y_title)
     plt.savefig(s, format='png', bbox_inches="tight")
     plt.close()
     s = base64.b64encode(s.getvalue()).decode("utf-8").replace("\n", "")
