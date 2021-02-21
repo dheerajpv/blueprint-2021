@@ -18,6 +18,16 @@ h3 {
     padding-top: 0.7em; 
 }
 
+details{
+    padding-left: 2em;
+    padding-bottom: 0.25em; 
+    display: block;
+    outline: none; 
+}
+
+summary {
+    outline: none; 
+}
 
 header {
     /* todo: make a better color (or an image!) */
