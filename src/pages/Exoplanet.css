@@ -6,8 +6,8 @@ body {
 }
 
 .container-exoplanets {
-    margin-right: 9rem;
-    margin-left: 9rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
     padding-top: 1em; 
     padding-bottom: 1em; 
     padding: 0.7em;
@@ -19,14 +19,17 @@ body {
     padding-top: 0.9em; 
 }
 
-.test {
+.facts{
     background-color: #452C53;
     padding-left: 2em;
-    padding-bottom: 0.25em;
+    padding-bottom: 0.15em;
     padding-right: 0.5em; 
     padding-left: 0.5em;
+    width: 35%;
     display: block;
     outline: none;
+    margin-top: 1.5em; 
+    margin-bottom: 1.5em; 
 }
 
 summary {

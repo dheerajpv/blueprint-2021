@@ -15,7 +15,7 @@ const Exoplanets = () => {
             <p> Exoplanets are planets outside our Solar System. Some orbit other stars but there are free-floating exoplanets that do not. Instead, they 
                 orbit the galatic center and are called rogue planets.  </p>
 
-            <details> 
+            <details className = "facts"> 
                 <summary><b>Fun Fact! </b> </summary>
                 <p>Discovered by NASA's Kepler Space Telescope: we know now that there are more planets than stars in the galaxy. </p>
             </details>
@@ -35,14 +35,14 @@ const Exoplanets = () => {
                     same size as Earth and it orbits a start in the{" "}
                     <b>"habitable zone"</b>
                 </p>
-                <details>
+                <details className = "facts">
                     <summary>
                         <b>Fun Fact! </b>{" "}
                     </summary>
                     <p>
                         {" "}
                         {"\n"} There are over 700 quintillion planets planets in
-                        the Universe!
+                        the Universe.
                     </p>
                 </details>
 
@@ -121,7 +121,7 @@ const Exoplanets = () => {
                     <li>
                         The Universe is too big: this is a catch-all theory but
                         the Universe is huge!
-                        <details>
+                        <details className = "facts">
                             <summary>
                                 <b>Fun Fact! </b>{" "}
                             </summary>
