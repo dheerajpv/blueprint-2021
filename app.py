@@ -9,12 +9,6 @@ import csv
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/", methods=["GET"])
-def exist():
-    return {
-        "hello": "i exist",
-    }
-
 @app.route("/graph", methods=["GET"])
 def make_graph():
     s = io.BytesIO()
@@ -26,6 +20,7 @@ def make_graph():
         reader = csv.reader(csvfile)
         next(reader)
 
+        # there are 256 different columns in the (purged) csv, so it picks a random column
         seed = randint(0, 256)
 
         for row in reader:
