@@ -5,7 +5,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.container-exoplanets {
+.container-info {
     margin-right: 9rem;
     margin-left: 9rem;
     padding-top: 1em; 
@@ -19,14 +19,14 @@ body {
     padding-top: 0.9em; 
 }
 
-.test {
+details {
     background-color: #452C53;
     padding-left: 2em;
     padding-bottom: 0.25em;
     padding-right: 0.5em; 
     padding-left: 0.5em;
+    width: 100%;
     display: block;
-    outline: none;
 }
 
 summary {
