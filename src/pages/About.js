@@ -22,10 +22,10 @@ const About = (props) => {
                             {" "}
                             Hello! I'm a sophomore interested in cryptography,
                             computer science, biology, and astrobiology. Yes -
-                            life exists outside Earth. Yes - we will land on Mars
-                            by 2030. Yes - I want to go to space (I will leave
-                            everything behind to go right now...). No - I do not
-                            believe in UFO sighting though.
+                            life exists outside Earth. Yes - we will land on
+                            Mars by 2030. Yes - I want to go to space (I will
+                            leave everything behind to go right now...). No - I
+                            do not believe in UFO sighting though.
                         </p>
                         <details>
                             <summary>
@@ -40,6 +40,7 @@ const About = (props) => {
                                         href="https://youtu.be/kmFaGbcD18c"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        className="summary-link"
                                     >
                                         {" "}
                                         J E N - d i v i n e
@@ -54,20 +55,38 @@ const About = (props) => {
                             <b>Ismayil Ismayilov</b>{" "}
                         </h3>
 
-                    <p> 
-                        Hi. I worked on the visuals for this. I don't know what to tell you. I think cryptography and 3D design is pretty cool.
-                        I hope you enjoy the website, I think exoplanets are pretty interesting. You know, I think I should have maybe
-                        considered how painful rendering is before I started this. Can I go home now? Oh wait. 
-                    </p>
-                        <details> 
-                            <summary><b>Favorite Lofi Playlist/Track/Artist? </b> </summary>
-                        <ul>
-                            <li>Artist: Ibrahim </li>
-                            <li>Playlist: I usually just pick a random one</li>
-                            <li><a href="https://www.youtube.com/watch?v=IatXU05oUE0"> Ibrahim - Land of Petals </a></li>
-                        </ul>
-                    </details>
-                </div>
+                        <p>
+                            Hi. I worked on the visuals for this. I don't know
+                            what to tell you. I think cryptography and 3D design
+                            is pretty cool. I hope you enjoy the website, I
+                            think exoplanets are pretty interesting. You know, I
+                            think I should have maybe considered how painful
+                            rendering is before I started this. Can I go home
+                            now? Oh wait.
+                        </p>
+                        <details>
+                            <summary>
+                                <b>Favorite Lofi Playlist/Track/Artist? </b>{" "}
+                            </summary>
+                            <ul>
+                                <li>Artist: Ibrahim </li>
+                                <li>
+                                    Playlist: I usually just pick a random one
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.youtube.com/watch?v=IatXU05oUE0"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="summary-link"
+                                    >
+                                        {" "}
+                                        Ibrahim - Land of Petals{" "}
+                                    </a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
 
                     <div className="col-sm">
                         <h3 classname="headers">
@@ -75,8 +94,8 @@ const About = (props) => {
                         </h3>
                         <p>
                             {" "}
-                            I am a sophore in Quincy High School, and I made
-                            the graph generating function. I am interested in
+                            I am a sophore in Quincy High School, and I made the
+                            graph generating function. I am interested in
                             computer science, and have experience in node.js,
                             especially discord.js. I am a huge fan of all things
                             space related (especially spacecraft and manned
@@ -97,6 +116,7 @@ const About = (props) => {
                                         href="https://www.youtube.com/watch?v=OnBLJjjYZHo&list=PL63ZO-jXFTasqvj7WdEFQ6QtG6UBrl9CR"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        className="summary-link"
                                     >
                                         Electronic Gems
                                     </a>
@@ -107,6 +127,7 @@ const About = (props) => {
                                         href="https://www.youtube.com/watch?v=8GW6sLrK40k"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        className="summary-link"
                                     >
                                         {" "}
                                         HOME - Resonance{" "}
