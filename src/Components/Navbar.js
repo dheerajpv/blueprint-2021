@@ -36,22 +36,22 @@ const Navbar = ({ page }) => {
                         </li>
                         <li>
                             <a
-                                href="/about"
-                                className={`nav-link ${
-                                    page === "/about" ? "active" : ""
-                                }`}
-                            >
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a
                                 href="/exoplanets"
                                 className={`nav-link ${
                                     page === "/exoplanets" ? "active" : ""
                                 }`}
                             >
                                 Exoplanets
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="/about"
+                                className={`nav-link ${
+                                    page === "/about" ? "active" : ""
+                                }`}
+                            >
+                                About
                             </a>
                         </li>
                     </ul>
