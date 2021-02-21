@@ -5,17 +5,19 @@ const Home = () => {
     const [image, setImage] = useState("");
     const [fail, setFail] = useState(false);
 
-    useEffect(() => {
-        (async () => {
-            const res = await fetch("http://localhost:5000/graph");
-            if (res.status !== 200) {
-                setFail(true);
-                return;
-            }
+    const getGraph = async () => {
+        const res = await fetch("http://localhost:5000/graph");
+        if (res.status !== 200) {
+            setFail(true);
+            return;
+        }
 
-            const json = await res.json();
-            setImage(json.image);
-        })();
+        const json = await res.json();
+        setImage(json.image);
+    };
+
+    useEffect(() => {
+        getGraph();
     }, []);
 
     return (
@@ -27,14 +29,18 @@ const Home = () => {
                 {image ? (
                     <>
                         <center>
-                            <img src={image} alt="a graph" width="50%" />
+                            <img
+                                src={image}
+                                alt="a randomly generated graph"
+                                width="50%"
+                            />
                         </center>
                     </>
                 ) : fail ? (
                     <>
                         <p>
                             There was a problem generating this graph. Please
-                            reload the page.
+                            reload the page or press the regenerate button.
                         </p>
                     </>
                 ) : (
@@ -48,6 +54,14 @@ const Home = () => {
                         <span className="visually-hidden">Loading...</span>
                     </>
                 )}
+                <button
+                    className="btn btn-primary"
+                    onClick={() => {
+                        getGraph();
+                    }}
+                >
+                    Regenerate Graph
+                </button>
             </div>
         </div>
     );

@@ -11,22 +11,25 @@ import "./App.css";
 const App = () => {
     return (
         <div className="page-container">
-           {/* <Navbar /> */}
-        <div className = "content-wrap">
-            <Router>
-                <Switch>
-                    <Route path="/" exact>
-                        <Home />
-                    </Route>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/exoplanets">
-                        <Exoplanets />
-                    </Route>
-                </Switch>
-            </Router>
-        </div>
+            <Navbar />
+            <div className="content-wrap">
+                <Router>
+                    <Switch>
+                        <Route path="/" exact>
+                            <Home />
+                        </Route>
+                        <Route path="/about">
+                            <About />
+                        </Route>
+                        <Route path="/exoplanets">
+                            <Exoplanets />
+                        </Route>
+                        <Route path="*">
+                            <NotFound />
+                        </Route>
+                    </Switch>
+                </Router>
+            </div>
             <Footer />
         </div>
     );
