@@ -1,6 +1,7 @@
 .home {
     text-align: center;
     background-image: url("../img/planets.png");
+    height: 100vh;
 }
 
 .home header {
