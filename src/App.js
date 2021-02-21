@@ -10,7 +10,7 @@ import "./App.css";
 const App = () => {
     return (
         <div className="page-container">
-           <Navbar />
+           {/* <Navbar /> */}
         <div className = "content-wrap">
             <Router>
                 <Switch>

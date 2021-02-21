@@ -10,7 +10,7 @@ const Exoplanets = () => {
             </header>
         <div className = "container-exoplanets"> 
 
-            <h3>What are exoplanets? </h3>
+            <h3 classname = "headers">What are exoplanets? </h3>
             <p> Exoplanets are planets outside our Solar System. Some orbit other stars but there are free-floating exoplanets that do not. Instead, they 
                 orbit the galatic center and are called rogue planets.  </p>
 
@@ -33,7 +33,7 @@ const Exoplanets = () => {
                 </details>
 
 
-            <h3>The Habitable Zone</h3>
+            <h3 classname = "headers">The Habitable Zone</h3>
 
             <p> 
                 The habitable zone (commonly nicknamed the "Goldilocks Zone") is a range of distances from a star where liquid water could be possible - something 
@@ -42,7 +42,7 @@ const Exoplanets = () => {
             </p>
 
 
-            <h3>Astrobiology</h3>
+            <h3 classname = "headers">Astrobiology</h3>
 
             <p>
                 Are we alone? I think that is the biggest unanswered question to this day. I remember when I was first asked this question, I immediately said yes. It was a 
