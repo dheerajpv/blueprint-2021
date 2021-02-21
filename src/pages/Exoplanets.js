@@ -37,13 +37,27 @@ const Exoplanets = () => {
                 theories to the Fermi Paradox but I wanted to share a few of my favorites. 
             </p>
             <ol>
-                <li>The Great Filter: </li>
+                <li>The Great Filter: a benchmark in our cosmological timeline that is a test of survival, intelligence, and/or society. That's a little broad but 
+                        in most theories about the Great Filter there is a general consensus on the different scenarios. </li>
                 <ul>
-                    <li>The Great Filter is a benchmark in our cosmological timeline that is a test of survival, intelligence, and/or society. That's a little broad but 
-                        in most theories about the Great Filter there is a general consensus of the timeline. 
+                    <li> We are behind the Great Filter (possibly millions of years behind) and we will not reach this benchmark during our lives. This means we are 
+                        so technologically behind that we cannot/will not communicate with anyone else and/or we cannot/will not find anything of importance. 
+                    </li>
+                    <li>
+                        We are approaching the Great Filter (in a couple hundreds of years). This means we are reaching a point where we are intelligent enough to communicate
+                        with others and/or discover signs of life. However, this might mean we are approaching our end soon (unless we pass the Great Filter - more on that later).
+                        The reason we haven't found anything because either they did not pass the Great Filter or they are slightly behind us. 
+                    </li>
+                    <li> 
+                        We have passed the Great Filter (extremely unlikely?) This means we are one of the few civilizations that is intelligent enough to communicate with
+                        others. Since Earth could be the only signs of life however, there is no one else to communicate to and that's why we haven't found anyone yet.
                     </li>
                 </ul>
-
+                <li>
+                    The Universe is too big: this is a catch-all theory but the Universe is huge! And we're just one planet in the middle of one among billions of galaxies. 
+                    Our current method of looking and sending signals is similar to whispering in a large crowd and expecting the person across the room to hear you. Signals 
+                    don't travel very far and most of them die out to incomprehensible sounds. While we do send probes and satellites 
+                </li>
             </ol>
 
         </div>

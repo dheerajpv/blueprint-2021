@@ -1,10 +1,13 @@
 from flask import Flask
 from flask_cors import CORS
-from matplotlib import pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 from random import randint
 import io
 import base64
 import csv
+
 
 app = Flask(__name__)
 CORS(app)
