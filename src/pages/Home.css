@@ -1,23 +1,20 @@
-html,
-body {
-    background-color: #1f1f1f;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .home {
     text-align: center;
 }
 
-
-header {
-    /* todo: make a better color (or an image!) */
+.home header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
     height: 10vh;
-    background-color: #0D7DC3;
+    background-color: #0d7dc3;
     color: white;
+    font-size: 4rem;
+}
+
+.home-header {
+    font-size: 5rem;
 }
 
 .image-container img {

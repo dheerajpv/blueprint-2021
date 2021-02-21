@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <div className="home">
             <header>
-                <h1>EXOPLANET GRAPHS</h1>
+                <h1 className="home-header">EXOPLANET GRAPHS</h1>
             </header>
             <div className="image-container">
                 {image ? (
@@ -40,12 +40,12 @@ const Home = () => {
                 ) : (
                     <>
                         <div
-                            class="spinner-border"
+                            className="spinner-border"
                             role="status"
                             style={{ color: "red" }}
                         />
                         <br />
-                        <span class="visually-hidden">Loading...</span>
+                        <span className="visually-hidden">Loading...</span>
                     </>
                 )}
             </div>

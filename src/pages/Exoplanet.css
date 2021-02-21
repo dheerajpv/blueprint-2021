@@ -1,27 +1,25 @@
 html,
 body {
     background-color: #1f1f1f;
-    color: white; 
-    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
-
-p, h3 {
+.exoplanets p,
+.exoplanets h3 {
     margin-right: 5em;
     margin-left: 5rem;
     padding: 1em;
     line-height: 1.5;
 }
 
-
-header {
-    /* todo: make a better color (or an image!) */
+.exoplanets-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
     height: 10vh;
-    background-color: #0D7DC3;
+    background-color: #0d7dc3;
     color: white;
 }
 
