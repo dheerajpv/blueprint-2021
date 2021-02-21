@@ -35,7 +35,11 @@ const About = (props) => {
                                 <li>Playlist: Anything Studio Ghibli</li>
                                 <li>
                                     Track:{" "}
-                                    <a href="https://youtu.be/kmFaGbcD18c">
+                                    <a
+                                        href="https://youtu.be/kmFaGbcD18c"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         {" "}
                                         J E N - d i v i n e
                                     </a>
@@ -67,7 +71,11 @@ const About = (props) => {
                                 </li>
                                 <li>
                                     Track:
-                                    <a href="https://www.youtube.com/watch?v=IatXU05oUE0%22%3E">
+                                    <a
+                                        href="https://www.youtube.com/watch?v=IatXU05oUE0%22%3E"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         {" "}
                                         Ibrahim - Land of Petals{" "}
                                     </a>
@@ -82,26 +90,41 @@ const About = (props) => {
                         </h3>
                         <p>
                             {" "}
-                            Hi. I worked on the visuals for this. I don't know
-                            what to tell you. I think cryptography and 3D design
-                            is pretty cool. I hope you enjoy the website, I
-                            think exoplanets are pretty interesting. Can I go
-                            home now? Oh wait.
+                            I am a sophore in Quincy High School, and. I made
+                            the graph generating function. I am interested in
+                            computer science, and have experience in node.js,
+                            especially discord.js. I am a huge fan of all things
+                            space related (especially spacecraft and manned
+                            spaceflight). And yes, vaporwave is better than lofi
+                            music.
                         </p>
                         <details>
                             <summary>
-                                <b>Favorite Lofi Playlist/Track/Artist? </b>{" "}
+                                <b>
+                                    Favorite Vaporwave Playlist/Track/Artist?{" "}
+                                </b>{" "}
                             </summary>
                             <ul>
-                                <li>Artist: Ibrahim </li>
+                                <li>Artist: HOME </li>
                                 <li>
-                                    Playlist: I usually just pick a random one
+                                    Playlist:{" "}
+                                    <a
+                                        href="https://www.youtube.com/watch?v=OnBLJjjYZHo&list=PL63ZO-jXFTasqvj7WdEFQ6QtG6UBrl9CR"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Electronic Gems
+                                    </a>
                                 </li>
                                 <li>
                                     Track:
-                                    <a href="https://www.youtube.com/watch?v=IatXU05oUE0%22%3E">
+                                    <a
+                                        href="https://www.youtube.com/watch?v=8GW6sLrK40k"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         {" "}
-                                        Ibrahim - Land of Petals{" "}
+                                        HOME - Resonance{" "}
                                     </a>
                                 </li>
                             </ul>
