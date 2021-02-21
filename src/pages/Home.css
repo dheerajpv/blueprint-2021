@@ -1,11 +1,13 @@
 html,
 body {
     background-color: #1f1f1f;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 .home {
     text-align: center;
 }
+
 
 header {
     /* todo: make a better color (or an image!) */
@@ -14,7 +16,7 @@ header {
     justify-content: center;
     width: 100vw;
     height: 10vh;
-    background-color: #131169;
+    background-color: #0D7DC3;
     color: white;
 }
 
