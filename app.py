@@ -1,10 +1,10 @@
 from flask import Flask
 from flask_cors import CORS
 from matplotlib import pyplot as plt
+from random import randint
 import io
 import base64
 import csv
-from random import randint
 
 app = Flask(__name__)
 CORS(app)
@@ -27,6 +27,7 @@ def make_graph():
         next(reader)
 
         seed = randint(0, 256)
+        print(seed)
 
         for row in reader:
             try:
