@@ -1,8 +1,6 @@
-from flask import Flask, Request, Response
+from flask import Flask
 from flask_cors import CORS
 from matplotlib import pyplot as plt
-import numpy as np
-import pandas as pd
 import io
 import base64
 import csv
@@ -17,8 +15,6 @@ def extend_with_extra_elements(*some_lists):
         extra_elements = [0] * extra_elements_count
         yield some_list + extra_elements
 
-
-data = pd.read_csv("src/PS_2021.02.18_14.17.39.csv", low_memory=False)
 
 @app.route("/", methods=["GET"])
 def exist():
