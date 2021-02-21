@@ -17,5 +17,16 @@ def exist():
         "hello": "i exist",
     }
 
+@app.route("/graph", methods=["GET"])
+def make_graph():
+    s = io.BytesIO()
+    plt.plot(list(range(100)))
+    plt.savefig(s, format='png', bbox_inches="tight")
+    plt.close()
+    s = base64.b64encode(s.getvalue()).decode("utf-8").replace("\n", "")
+    return {
+        "image": "data:image/png;base64," + s,
+    }
+
 if (__name__ == "__main__"):
     app.run()
