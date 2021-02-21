@@ -10,6 +10,10 @@ body {
     height: 100vh;
 }
 
+.about-us-header {
+    margin-bottom: 1rem;
+}
+
 .container-info {
     margin-right: 10rem;
     margin-left: 10rem;
@@ -38,13 +42,14 @@ summary {
     outline: none;
 }
 
-header {
-    /* todo: make a better color (or an image!) */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    height: 10vh;
-    background-color: #a2d2ff;
-    color: #03071e;
+.summary-link {
+    color: yellow;
+}
+
+.summary-link:hover {
+    text-decoration: yellow;
+}
+
+.summary-link:visited {
+    color: #cece25;
 }
