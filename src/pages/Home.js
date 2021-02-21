@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../Components/Navbar";
 import "./Home.css";
 
-const Home = () => {
+const Home = (props) => {
     const [image, setImage] = useState("");
     const [fail, setFail] = useState(false);
 
@@ -22,6 +23,7 @@ const Home = () => {
 
     return (
         <div className="home">
+            <Navbar page={props.location.pathname} />
             <header>
                 <h1 className="home-header">EXOPLANET GRAPHS</h1>
             </header>

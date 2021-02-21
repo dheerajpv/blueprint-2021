@@ -4,33 +4,27 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Exoplanets from "./pages/Exoplanets";
 import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 
 const App = () => {
     return (
-        <div className="page-container">
-            <Navbar />
-            <div className="content-wrap">
-                <Router>
-                    <Switch>
-                        <Route path="/" exact>
-                            <Home />
-                        </Route>
-                        <Route path="/about">
-                            <About />
-                        </Route>
-                        <Route path="/exoplanets">
-                            <Exoplanets />
-                        </Route>
-                        <Route path="*">
-                            <NotFound />
-                        </Route>
-                    </Switch>
-                </Router>
-            </div>
-            <Footer />
+        <div className="page-container content-wrap">
+            <Router>
+                <Switch>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/about">
+                        <About />
+                    </Route>
+                    <Route path="/exoplanets">
+                        <Exoplanets />
+                    </Route>
+                    <Route path="*">
+                        <NotFound />
+                    </Route>
+                </Switch>
+                <Footer />
+            </Router>
         </div>
     );
 };
