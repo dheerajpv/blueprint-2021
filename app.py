@@ -27,7 +27,6 @@ def make_graph():
         next(reader)
 
         seed = randint(0, 256)
-        print(seed)
 
         for row in reader:
             try:
