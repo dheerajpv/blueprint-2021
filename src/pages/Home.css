@@ -4,6 +4,7 @@
 
 .home header {
     display: flex;
+    margin-bottom: 1em; 
     padding-bottom: 1em;
     padding-top: 1em;
     flex-direction: column;

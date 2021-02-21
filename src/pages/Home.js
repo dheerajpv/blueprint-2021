@@ -59,7 +59,7 @@ const Home = (props) => {
                         <div
                             className="spinner-border"
                             role="status"
-                            style={{ color: "red" }}
+                            style={{ color: "#A2D2FF" }}
                         />
                         <br />
                         <span className="visually-hidden">Loading...</span>
