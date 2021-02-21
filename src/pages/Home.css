@@ -10,10 +10,9 @@
 }
 
 .image-container img {
-    margin: 2rem;
-    /*border-radius: 2rem; */
+    margin: 1rem;
 }
 
 img {
-    border-radius: 0px;
+    border-radius: 1rem;
 }
