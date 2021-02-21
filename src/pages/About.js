@@ -21,8 +21,8 @@ const About = (props) => {
                         <p>
                             {" "}
                             Hello! I'm a sophomore interested in cryptography,
-                            computer science, biology, and astrobiology. Yes -
-                            life exists outside Earth. Yes - we will land on Mars
+                            computer science, and astrobiology. I worked on the front end side of the project. 
+                            Yes - life exists outside Earth. Yes - we will launch to Mars
                             by 2030. Yes - I want to go to space (I will leave
                             everything behind to go right now...). No - I do not
                             believe in UFO sighting though.
