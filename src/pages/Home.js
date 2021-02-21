@@ -38,7 +38,7 @@ const Home = (props) => {
                     getGraph();
                 }}
             >
-                Regenerate Graph
+                Generate Graph
             </button>
 
             <div className="image-container">
@@ -53,6 +53,7 @@ const Home = (props) => {
                         </center>
                     </>
                 ) : fail ? (
+                    // reloader, fail, catch-all option 
                     <>
                         <p>
                             There was a problem generating this graph. Please
