@@ -4,11 +4,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Exoplanets from "./pages/Exoplanets";
 import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
 import "./App.css";
 
 const App = () => {
     return (
         <div className="page-container">
+           <Navbar />
         <div className = "content-wrap">
             <Router>
                 <Switch>
