@@ -5,16 +5,31 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.exoplanets p,
-.exoplanets h3,
-.exoplanets ol {
-    margin-right: 8em;
+.container-exoplanets {
+    margin-right: 8rem;
     margin-left: 8rem;
-    padding: 0.75em;
-    line-height: 1.5;
+    padding: 0.7em;
+    line-height: 1.65;
 }
 
-.exoplanets-header {
+h3 {
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
+}
+
+details {
+    padding-left: 2em;
+    padding-bottom: 0.25em;
+    display: block;
+    outline: none;
+}
+
+summary {
+    outline: none;
+}
+
+header {
+    /* todo: make a better color (or an image!) */
     display: flex;
     flex-direction: column;
     justify-content: center;
