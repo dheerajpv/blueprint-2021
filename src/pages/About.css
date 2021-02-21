@@ -1,0 +1,50 @@
+html,
+body {
+    background-color: #0E2051;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container-info {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    padding-top: 1em; 
+    padding-bottom: 1em; 
+    padding: 0.7em;
+    line-height: 1.65;
+}
+
+.headers {
+    padding-bottom: 0.9em; 
+    padding-top: 0.9em; 
+}
+
+details {
+    background-color: #452C53;
+    padding-left: 2em;
+    padding-bottom: 0.25em;
+    padding-right: 0.5em; 
+    padding-left: 0.5em;
+    width: 100%;
+    display: block;
+}
+
+summary {
+    outline: none;
+}
+
+header {
+    /* todo: make a better color (or an image!) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #a2d2ff;
+    color: white;
+}
+
+.image-container img {
+    margin: 2rem;
+    border-radius: 2rem;
+}

@@ -25,8 +25,17 @@ const Home = (props) => {
         <div className="home">
             <Navbar page={props.location.pathname} />
             <header>
-                <h1 className="home-header">EXOPLANET GRAPHS</h1>
+                <h1 className="home-header">EXOPLANET GRAPHS</h1> {"\n"}
             </header>
+            <button
+                    className="btn btn-primary"
+                    onClick={() => {
+                        getGraph();
+                    }}
+                >
+                    Regenerate Graph
+                </button>
+
             <div className="image-container">
                 {image ? (
                     <>
@@ -56,14 +65,7 @@ const Home = (props) => {
                         <span className="visually-hidden">Loading...</span>
                     </>
                 )}
-                <button
-                    className="btn btn-primary"
-                    onClick={() => {
-                        getGraph();
-                    }}
-                >
-                    Regenerate Graph
-                </button>
+
             </div>
         </div>
     );

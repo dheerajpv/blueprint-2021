@@ -4,13 +4,14 @@
 
 .home header {
     display: flex;
+    padding-bottom: 1em; 
+    padding-top: 1em; 
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
-    background-color: #0d7dc3;
-    color: white;
-    font-size: 4rem;
+    background-color: #a2d2ff;
+    font-size: 3.5rem;
 }
 
 .home-header {
