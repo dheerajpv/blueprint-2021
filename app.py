@@ -1,7 +1,6 @@
 from flask import Flask, Request, Response
 from flask_cors import CORS
 from matplotlib import pyplot as plt
-import numpy as np
 import pandas as pd
 import io
 import base64
