@@ -21,7 +21,7 @@ def make_graph():
     y_title = ""
     
     # makes col1 and col2 have a list of values from the csv
-    with open("src/planets_2021.02.21_04.45.24(test).csv", newline="") as csvfile:
+    with open("src/planets_2021.02.21_04.45.24.csv", newline="") as csvfile:
         reader = csv.reader(csvfile)
 
         # skip the first row because it has text that can't become a number
