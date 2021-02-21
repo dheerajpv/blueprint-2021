@@ -1,13 +1,14 @@
-import React from "react";
+import React from 'react'
 import "./Footer.css";
 
 
-const FooterPage = () => {
+const Footer = () => {
     return (
         <div className = "footer">
             <h1 className = "text"><center>Made during Blueprint HackMIT 2021 by Dominique Dang, Ismayil Ismayilov, {"&"} Dheeraj Prakash </center></h1>
         </div>
+        // Test
     );
 }
 
-export default FooterPage;
+export default Footer;
