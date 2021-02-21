@@ -39,6 +39,7 @@ def make_graph():
             except:
                 pass
 
+    # truncates the longer list to be the same length as the shorter one
     if len(col1) > len(col2):
         for i in range(len(col1) - len(col2)):
             col1.pop()
