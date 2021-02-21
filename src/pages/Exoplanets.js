@@ -1,24 +1,35 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 import "./Exoplanet.css";
 
-const Exoplanets = () => {
+const Exoplanets = (props) => {
     return (
         <div className="exoplanets">
+            <Navbar page={props.location.pathname} />
             <header className="exoplanets-header">
                 <h1>
                     <center>EXOPLANETS {"&"} ASTROBIOLOGY</center>
                 </h1>
             </header>
-        <div className = "container-exoplanets"> 
+            <div className="container-exoplanets">
+                <h3 classname="headers">What are exoplanets? </h3>
+                <p>
+                    {" "}
+                    Exoplanets are planets outside our Solar System. Some orbit
+                    other stars but there are free-floating exoplanets that do
+                    not. Instead, they orbit the galatic center and are called
+                    rogue planets.{" "}
+                </p>
 
-            <h3 classname = "headers">What are exoplanets? </h3>
-            <p> Exoplanets are planets outside our Solar System. Some orbit other stars but there are free-floating exoplanets that do not. Instead, they 
-                orbit the galatic center and are called rogue planets.  </p>
-
-            <details className = "facts"> 
-                <summary><b>Fun Fact! </b> </summary>
-                <p>Discovered by NASA's Kepler Space Telescope: we know now that there are more planets than stars in the galaxy. </p>
-            </details>
+                <details className="facts">
+                    <summary>
+                        <b>Fun Fact! </b>{" "}
+                    </summary>
+                    <p>
+                        Discovered by NASA's Kepler Space Telescope: we know now
+                        that there are more planets than stars in the galaxy.{" "}
+                    </p>
+                </details>
 
                 <p>
                     The majority of discovered exoplanets are in the Milky Way
@@ -35,7 +46,7 @@ const Exoplanets = () => {
                     same size as Earth and it orbits a start in the{" "}
                     <b>"habitable zone"</b>
                 </p>
-                <details className = "facts">
+                <details className="facts">
                     <summary>
                         <b>Fun Fact! </b>{" "}
                     </summary>
@@ -46,13 +57,7 @@ const Exoplanets = () => {
                     </p>
                 </details>
 
-            <h3 classname = "headers">The Habitable Zone</h3>
-
-            <p> 
-                The habitable zone (commonly nicknamed the "Goldilocks Zone") is a range of distances from a star where liquid water could be possible - something 
-                extremely vital for life on Earth. With recent calculations and discoveries, the habitable zone includes other factors such as thermal equilibrium and
-                 the greenhouse effect. 
-            </p>
+                <h3 classname="headers">The Habitable Zone</h3>
 
                 <p>
                     The habitable zone (commonly nicknamed the "Goldilocks
@@ -63,7 +68,16 @@ const Exoplanets = () => {
                     equilibrium and the greenhouse effect.
                 </p>
 
-            <h3 classname = "headers">Astrobiology</h3>
+                <p>
+                    The habitable zone (commonly nicknamed the "Goldilocks
+                    Zone") is a range of distances from a star where liquid
+                    water could be possible - something extremely vital for life
+                    on Earth. With recent calculations and discoveries, the
+                    habitable zone includes other factors such as thermal
+                    equilibrium and the greenhouse effect.
+                </p>
+
+                <h3 classname="headers">Astrobiology</h3>
 
                 <p>
                     Are we alone? I think that is the biggest unanswered
@@ -121,7 +135,7 @@ const Exoplanets = () => {
                     <li>
                         The Universe is too big: this is a catch-all theory but
                         the Universe is huge!
-                        <details className = "facts">
+                        <details className="facts">
                             <summary>
                                 <b>Fun Fact! </b>{" "}
                             </summary>

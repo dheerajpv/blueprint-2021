@@ -13,12 +13,8 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route path="/" exact component={Home} />
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/exoplanets">
-                        <Exoplanets />
-                    </Route>
+                    <Route path="/about" component={About} />
+                    <Route path="/exoplanets" component={Exoplanets} />
                     <Route path="*">
                         <NotFound />
                     </Route>
