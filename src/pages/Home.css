@@ -19,5 +19,9 @@
 
 .image-container img {
     margin: 2rem;
-    border-radius: 2rem;
+    /*border-radius: 2rem; */
+}
+
+img {
+    border-radius: 0px; 
 }
