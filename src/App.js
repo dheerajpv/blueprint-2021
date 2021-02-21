@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Exoplanets from "./pages/Exoplanets";
 import NotFound from "./pages/NotFound";
-import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 import "./App.css";
 
 const App = () => {
