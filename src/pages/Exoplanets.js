@@ -7,6 +7,7 @@ const Exoplanets = () => {
              <header>
                 <h1><center>EXOPLANETS &#38; ASTROBIOLOGY</center></h1>
             </header>
+        <div className = "container-exoplanets"> 
 
             <h3>What are exoplanets? </h3>
             <p> Exoplanets are planets outside our Solar System. Some orbit other stars but there are free-floating exoplanets that do not. Instead, they 
@@ -66,6 +67,15 @@ const Exoplanets = () => {
                 the counter: we don't have that microscope for space yet. We can't walk a mile to the ocean and we can't zoom in to find life. And as technology evolves and 
                 our understanding of life, astronomy, and biology improves, we will soon find that we are not alone. 
             </p>
+
+            <p> Sources: 
+                <ul style={{listStyleType: "none"}}>
+                    <li><a href="https://www.space.com/17738-exoplanets.html">www.space.com/17738-exoplanets.html</a></li>
+                    <li><a href="https://exoplanets.nasa.gov/what-is-an-exoplanet/overview/">exoplanets.nasa.gov/what-is-an-exoplanet/overview/</a></li>
+                </ul> 
+            </p>
+        </div>
+        
         </div>
     );
 };
