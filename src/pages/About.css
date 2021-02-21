@@ -5,6 +5,11 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.about-us {
+    background-image: url("../img/about-bg.png");
+    height: 100vh;
+}
+
 .container-info {
     margin-right: 10rem;
     margin-left: 10rem;

@@ -3,3 +3,7 @@
 body {
     overflow-x: hidden;
 }
+
+.navbar {
+    background-image: url("img/header.png");
+}
