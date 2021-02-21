@@ -56,10 +56,16 @@ const Exoplanets = () => {
                 <li>
                     The Universe is too big: this is a catch-all theory but the Universe is huge! And we're just one planet in the middle of one among billions of galaxies. 
                     Our current method of looking and sending signals is similar to whispering in a large crowd and expecting the person across the room to hear you. Signals 
-                    don't travel very far and most of them die out to incomprehensible sounds. While we do send probes and satellites 
+                    don't travel very far and most of them die out to incomprehensible sounds. While we do send probes and satellites (the Voyager probes) with human artifacts, 
+                    we don't know how long until someone (or something) finds it or whether, anything will happen as a result. 
                 </li>
             </ol>
-
+            <p> 
+                I remember at a MIT HSSP class about astrobiology, one of the teachers said, "If you take a cup of water from the ocean, you wouldn't find a fish right away.
+                And it's just like space." However, I thought, "Well, if you took a microscope, you would certainly find microbial life." {"\n"} But in that arguement, I found 
+                the counter: we don't have that microscope for space yet. We can't walk a mile to the ocean and we can't zoom in to find life. And as technology evolves and 
+                our understanding of life, astronomy, and biology improves, we will soon find that we are not alone. 
+            </p>
         </div>
     );
 };
