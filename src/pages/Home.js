@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div className="home">
             <header>
-                <h1>Exoplanet Graphs</h1>
+                <h1>EXOPLANET GRAPHS</h1>
             </header>
             <div className="image-container">
                 {image ? (
