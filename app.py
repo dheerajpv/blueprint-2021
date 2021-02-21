@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 import io
 import base64
 import csv
+from random import randint
 
 app = Flask(__name__)
 CORS(app)
@@ -24,11 +25,19 @@ def make_graph():
     with open("src/PS_2021.02.18_14.17.39.csv", newline="") as csvfile:
         reader = csv.reader(csvfile)
         next(reader)
+
+        seed = randint(0, 256)
+
         for row in reader:
             try:
-                col1.append(float(row[74]))
+                col1.append(float(row[seed]))
+            except:
+                pass
+
             try:
-                col2.append(float(row[75]))
+                col2.append(float(row[seed]))
+            except:
+                pass
 
     if len(col1) > len(col2):
         for i in range(len(col1) - len(col2)):
