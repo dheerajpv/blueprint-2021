@@ -8,14 +8,6 @@ import csv
 app = Flask(__name__)
 CORS(app)
 
-def extend_with_extra_elements(*some_lists):
-    max_some_lists_length = max(map(len, some_lists))
-    for some_list in some_lists:
-        extra_elements_count = max_some_lists_length - len(some_list)
-        extra_elements = [0] * extra_elements_count
-        yield some_list + extra_elements
-
-
 @app.route("/", methods=["GET"])
 def exist():
     return {
@@ -35,21 +27,22 @@ def make_graph():
         for row in reader:
             try:
                 col1.append(float(row[74]))
-            except:
-                pass
-
             try:
                 col2.append(float(row[75]))
-            except:
-                pass
 
-    col1, col2 = extend_with_extra_elements(col1, col2)
+    if len(col1) > len(col2):
+        for i in range(len(col1) - len(col2)):
+            col1.pop()
+    elif len(col2) > len(col2) - len(col1):
+        for i in range(len(col2) - len(col1)):
+            col2.pop()
 
-    plt.plot(col1[1:], col2[1:], "bo", antialiased=True)
-
+    plt.plot(col1, col2, "bo")
     plt.savefig(s, format='png', bbox_inches="tight")
     plt.close()
     s = base64.b64encode(s.getvalue()).decode("utf-8").replace("\n", "")
+
+    # sends the image in a format displayable in an <img />
     return {
         "image": "data:image/png;base64," + s,
     }

@@ -10,7 +10,7 @@ const Home = () => {
             const json = await res.json();
             setImage(json.image);
         })();
-    });
+    }, []);
 
     return (
         <div className="home">
