@@ -20,16 +20,6 @@ const Exoplanets = () => {
                 <p>Discovered by NASA's Kepler Space Telescope: we know now that there are more planets than stars in the galaxy. </p>
             </details>
 
-                <details>
-                    <summary>
-                        <b>Fun Fact! </b>{" "}
-                    </summary>
-                    <p>
-                        Discovered by NASA's Kepler Space Telescope: we know now
-                        that there are more planets than stars in the galaxy.{" "}
-                    </p>
-                </details>
-
                 <p>
                     The majority of discovered exoplanets are in the Milky Way
                     Galaxy. We can find exoplanets by measuring their size and

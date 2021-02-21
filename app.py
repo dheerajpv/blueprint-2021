@@ -28,8 +28,8 @@ def make_graph():
         header = next(reader)
 
         # there are 256 different columns in the (purged) csv, so it picks a random column
-        seed_x = randint(0, 252)
-        seed_y = randint(0, 252)
+        seed_x = randint(0, 188)
+        seed_y = randint(0, 188)
 
         x_title = header[seed_x]
         y_title = header[seed_y]
