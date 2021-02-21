@@ -24,20 +24,22 @@ const Home = (props) => {
     return (
         <div className="home">
             <Navbar page={props.location.pathname} />
-            <center> 
+            <center>
                 <header>
-                    <h1 className="home-header">EXOPLANET GRAPHS</h1>
+                    <h1 className="home-header text-center">
+                        EXOPLANET GRAPHS
+                    </h1>
                 </header>
             </center>
 
             <button
-                    className="btn btn-primary"
-                    onClick={() => {
-                        getGraph();
-                    }}
-                >
-                    Regenerate Graph
-                </button>
+                className="btn btn-primary"
+                onClick={() => {
+                    getGraph();
+                }}
+            >
+                Regenerate Graph
+            </button>
 
             <div className="image-container">
                 {image ? (
@@ -68,7 +70,6 @@ const Home = (props) => {
                         <span className="visually-hidden">Loading...</span>
                     </>
                 )}
-
             </div>
         </div>
     );

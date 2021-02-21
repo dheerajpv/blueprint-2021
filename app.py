@@ -31,8 +31,15 @@ def make_graph():
         seed_x = randint(0, 138)
         seed_y = randint(0, 138)
 
-        x_title = header[seed_x]
-        y_title = header[seed_y]
+        try:
+            x_title = header[seed_x]
+        except:
+            x_title = ""
+        
+        try:
+            y_title = header[seed_y]
+        except:
+            y_title = ""
 
         for row in reader:
             try:

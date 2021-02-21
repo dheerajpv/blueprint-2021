@@ -1,13 +1,12 @@
 .home {
     text-align: center;
+    background-image: url("../img/planets.png");
 }
 
-.home-header {
-    font-size: 5rem;
-    display: flex;
-    text-align: center;
-    background-color: #a2d2ff;
-    color: #03071e; 
+.home header {
+    background-image: url("../img/header.png");
+    color: white;
+    margin-bottom: 1rem;
 }
 
 .image-container img {
