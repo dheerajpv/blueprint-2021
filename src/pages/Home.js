@@ -19,9 +19,11 @@ const Home = () => {
             </header>
             <div className="image-container">
                 {image ? (
-                    <center>
-                        <img src={image} alt="a graph" width="50%" />
-                    </center>
+                    <>
+                        <center>
+                            <img src={image} alt="a graph" width="50%" />
+                        </center>
+                    </>
                 ) : (
                     <>
                         <div
