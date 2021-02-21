@@ -28,6 +28,24 @@ const Exoplanets = () => {
                  the greenhouse effect. 
             </p>
 
+            <h3>Astrobiology</h3>
+            <p>
+                Are we alone? I think that is the biggest unanswered question to this day. I remember when I was first asked this question, I immediately said yes. It was a 
+                naive answer at the time but I couldn't wrap my head around the possibility that there could be life outside our planet. As I entered my own wormhole of YouTube
+                and papers, I learned about exoplanets and astrobiology. With all the fun facts above, the odds of not finding life is extremly small. Why haven't we found 
+                anything? Let's bring in the Fermi Paradox, created by Italian physicist, Enrico Fermi, who wondered this as well. There are many reasons and interesting 
+                theories to the Fermi Paradox but I wanted to share a few of my favorites. 
+            </p>
+            <ol>
+                <li>The Great Filter: </li>
+                <ul>
+                    <li>The Great Filter is a benchmark in our cosmological timeline that is a test of survival, intelligence, and/or society. That's a little broad but 
+                        in most theories about the Great Filter there is a general consensus of the timeline. 
+                    </li>
+                </ul>
+
+            </ol>
+
         </div>
     );
 };
