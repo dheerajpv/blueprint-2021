@@ -1,10 +1,9 @@
 html,
 body {
     background-color: #1f1f1f;
-    color: white; 
-    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-family: "Open Sans", sans-serif;
 }
-
 
 .container-exoplanets {
     margin-right: 8rem;
@@ -18,15 +17,15 @@ body {
     padding-top: 0.9em; 
 }
 
-details{
+details {
     padding-left: 2em;
-    padding-bottom: 0.25em; 
+    padding-bottom: 0.25em;
     display: block;
-    outline: none; 
+    outline: none;
 }
 
 summary {
-    outline: none; 
+    outline: none;
 }
 
 header {
@@ -36,7 +35,7 @@ header {
     justify-content: center;
     width: 100vw;
     height: 10vh;
-    background-color: #0D7DC3;
+    background-color: #0d7dc3;
     color: white;
 }
 

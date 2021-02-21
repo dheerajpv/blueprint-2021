@@ -1,0 +1,29 @@
+.not-found {
+    text-align: center;
+    line-height: normal;
+}
+
+.not-found h1,
+.not-found h3,
+.not-found p {
+    margin: 0;
+    padding: 0;
+}
+
+.not-found h1 {
+    font-family: "Open Sans";
+    font-size: 10rem;
+}
+
+.not-found h3 {
+    font-size: 3rem;
+}
+
+.not-found p {
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.small {
+    font-size: 1rem;
+}
